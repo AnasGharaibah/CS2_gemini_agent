@@ -131,3 +131,9 @@ pip install pyqt6 fastapi uvicorn pymongo google-genai python-dotenv mss numpy o
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details (if available).
+
+## Contributers
+https://github.com/AnasGharaibah
+https://github.com/MuradSalaytah
+https://github.com/Enraged1
+https://github.com/qusain2624
