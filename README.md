@@ -54,19 +54,22 @@ pip install pyqt6 fastapi uvicorn pymongo google-genai python-dotenv mss numpy o
    ```cfg
    "CS2 AI Coach"
    {
-    "uri" "http://127.0.0.1:3000/gsi"
-    "timeout" "5.0"
-    "buffer"  "0.1"
-    "throttle" "0.1"
-    "heartbeat" "30.0"
+    "uri" "http://127.0.0.1:3000"
+    "timeout" "1.1"
+    "buffer"  "0.05"
+    "throttle" "0.0.05"
     "data"
     {
-    "map"                "1"
-    "round"              "1"
-    "player_id"          "1"
-    "player_state"       "1"
-    "player_weapons"     "1"
-    "player_match_stats" "1"
+      "map" "1"
+      "round" "1"
+      "player_id" "1"
+      "player_state" "1"
+      "player_match_stats"   "1"
+      "player_weapons" "1"
+      "allplayers_id" "1"
+      "allplayers_state" "1"
+      "allplayers_position" "1"
+      "phase_countdowns" "1"
     }
    }
    ```
@@ -74,20 +77,21 @@ pip install pyqt6 fastapi uvicorn pymongo google-genai python-dotenv mss numpy o
 4. **Start MongoDB**: Ensure your MongoDB service is running on `localhost:27017`.
 
 ## 🏃 Run Commands
-
-1. **Main Application**:
+1. **Run CS2**
+ 
+2. **Main Application**:
    Starts the GUI, FastAPI backend, and STT listener.
    ```bash
    python main.py
    ```
 
-2. **Standalone Database Management**:
+3. **Standalone Database Management**:
    Check or initialize the database.
    ```bash
    python database.py
    ```
 
-3. **Verify Routes**:
+4. **Verify Routes**:
    Verify that the FastAPI backend is correctly registered.
    ```bash
    python CS2/verify_routes.py
